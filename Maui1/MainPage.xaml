@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Maui1.MainPage">
+
+    <Grid RowSpacing="25"
+          Padding="{OnPlatform iOS='30,60,30,30', Default='30'}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <Label
+            Text="Hello, C# World!"
+            Grid.Row="0"
+            FontSize="32"
+            HorizontalTextAlignment="Center"/>
+        <Label 
+            x:Name="labelCount"
+            Text="0"
+            Grid.Row="1"
+            FontSize="32"
+            HorizontalTextAlignment="Center"/>
+        <Label
+            x:Name="labelTime"
+            Text="00:00"
+            Grid.Row="2"
+            FontSize="32"
+            HorizontalTextAlignment="Center"/>
+        <Button
+            Text="Clic me"
+            FontAttributes="Bold"
+            Grid.Row="3"
+            Clicked="OnClicked"
+            HorizontalOptions="Center"/>
+    </Grid>
+
+    <!--<Grid RowSpacing="25"
+          Padding="{OnPlatform iOS='30,60,30,30', Default='30'}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="310"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Text="Row(0,0)"
+               Grid.Row="0" Grid.Column="0"
+               BackgroundColor="Red" 
+               TextColor="White"
+               HorizontalTextAlignment="Center"
+               VerticalOptions="Center"/>
+        <Label Text="Row(0,1)"
+               Grid.Row="0" Grid.Column="1"
+               BackgroundColor="Blue" 
+               TextColor="White"
+               HorizontalTextAlignment="Center"
+               VerticalOptions="Center"/>
+    </Grid>-->
+
+
+</ContentPage>
